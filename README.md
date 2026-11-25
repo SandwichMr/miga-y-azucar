@@ -2,7 +2,9 @@
 
 Sitio web completo para una repostería de autor, con design system propio.
 
-**[Ver la demo en vivo](https://leonardoflores.dev/proyectos/miga-y-azucar/)** · [Caso de estudio](https://leonardoflores.dev/trabajo/miga-y-azucar) **Proyecto concepto: la marca es ficticia.** El nombre, los textos y los datos de contacto son de ejemplo, y las fotos de producto se generaron con IA.
+**[Ver la demo en vivo](https://leonardoflores.dev/proyectos/miga-y-azucar/)** · [Caso de estudio](https://leonardoflores.dev/trabajo/miga-y-azucar)
+
+**Proyecto concepto: la marca es ficticia.** El nombre, los textos y los datos de contacto son de ejemplo, y las fotos de producto se generaron con IA.
 
 <p align="center">
   <img src="docs/escritorio.png" alt="Página de inicio en computadora" width="72%">
