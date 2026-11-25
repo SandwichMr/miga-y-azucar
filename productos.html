@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos · Miga & Azúcar</title>
+  <meta name="description" content="Catálogo de ejemplo.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2e5b5a">
+  <link rel="preload" href="assets/fonts/Fraunces-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/InstrumentSans-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="productos">
+  <div data-site-header></div>
+  <main id="contenido">
+    <section class="page-head">
+      <div class="container stack-md"><p class="eyebrow">Ordena en línea</p><h1 class="h1" data-catalog-title>Todos los productos</h1></div>
+    </section>
+    <nav class="chips" aria-label="Categorías"><div class="chips__row" data-chips></div></nav>
+    <section class="section">
+      <div class="container stack-lg">
+        <ul class="product-grid" data-catalog></ul>
+        <div class="empty stack-md" data-empty hidden>
+          <p>Aún no hay productos en esta colección. Pregúntanos por lo disponible hoy o pide algo especial.</p>
+          <div><a class="btn btn--primary" href="personaliza.html#cotizar">Pide algo especial</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

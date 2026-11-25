@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos · Miga & Azúcar</title>
+  <meta name="description" content="Mesas de postres de ejemplo.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2e5b5a">
+  <link rel="preload" href="assets/fonts/Fraunces-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/InstrumentSans-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="eventos">
+  <div data-site-header></div>
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="page-hero__text">
+        <p class="eyebrow">Eventos</p>
+        <h1 class="h1">Postres para <em>tus grandes momentos</em></h1>
+        <p class="lead">Mesas de postres, box lunch y pasteles pensados para tu evento, del más íntimo al más grande.</p>
+        <div class="hero__actions"><a class="btn btn--primary" href="#cotizar">Cotiza tu evento</a></div>
+      </div>
+      <div class="page-hero__media"><img src="assets/img/eventos-portada.jpg" alt="Mesa de postres para una boda en un jardín" fetchpriority="high"></div>
+    </section>
+
+    <section class="section">
+      <div class="container stack-lg">
+        <div class="columns">
+          <div class="stack-md"><h2 class="h3">Celebraciones</h2><ul class="list"><li>Bodas</li><li>Cumpleaños</li><li>Bautizos y comuniones</li><li>Baby showers</li><li>Reuniones de trabajo</li></ul></div>
+          <div class="stack-md"><h2 class="h3">Lo que preparamos</h2><ul class="list"><li>Mesas de postres</li><li>Box lunch</li><li>Coffee break</li><li>Pasteles para el evento</li></ul><p class="caption muted">Para eventos grandes, reserva con anticipación.</p></div>
+        </div>
+        <div class="gallery">
+          <img src="assets/img/evento-macarrones.jpg" alt="Torre de macarrones" loading="lazy">
+          <img src="assets/img/evento-vasitos.jpg" alt="Vasitos de postre en una mesa de evento" loading="lazy">
+          <img src="assets/img/evento-boxlunch.jpg" alt="Box lunch con postre y galletas" loading="lazy">
+          <img src="assets/img/pastel-flores.jpg" alt="Pastel con flores naturales" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="cotizar">
+      <div class="container split">
+        <div class="split__text stack-md"><p class="eyebrow">Cotización</p><h2 class="h2">Cuéntanos de tu evento</h2>
+          <p class="lead">Dinos el tipo de evento, la fecha y cuántas personas serán. Te ayudamos a armar la mesa ideal.</p></div>
+        <form class="quote-form" data-wa-form data-wa-intro="Hola Miga &amp; Azúcar, quiero cotizar postres para un evento." novalidate>
+          <h3 class="h3">Cotiza tu evento</h3>
+          <div class="form-row">
+            <div class="field"><label for="e-nombre">Nombre</label><input id="e-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre"></div>
+            <div class="field"><label for="e-tel">Teléfono</label><input id="e-tel" name="telefono" type="tel" autocomplete="tel" placeholder="222 000 0000"></div>
+          </div>
+          <div class="field">
+            <label for="e-correo">Correo electrónico*</label>
+            <input id="e-correo" name="correo" type="email" autocomplete="email" placeholder="tu@correo.com" required aria-describedby="e-correo-error">
+            <p class="field__error" id="e-correo-error" hidden>Escribe un correo válido.</p>
+          </div>
+          <div class="field"><label for="e-mensaje">¿Qué nos quieres decir?</label><textarea id="e-mensaje" name="mensaje" rows="4" placeholder="Tipo de evento, fecha y número de personas"></textarea></div>
+          <div class="quote-form__actions">
+            <button class="btn btn--primary" type="submit">Enviar por WhatsApp</button>
+            <p class="caption">Te mostraremos el mensaje listo para enviar.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

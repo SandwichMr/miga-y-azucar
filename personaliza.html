@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personaliza · Miga & Azúcar</title>
+  <meta name="description" content="Pasteles personalizados de ejemplo.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2e5b5a">
+  <link rel="preload" href="assets/fonts/Fraunces-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/InstrumentSans-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="personaliza">
+  <div data-site-header></div>
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="page-hero__text">
+        <p class="eyebrow">Personaliza</p>
+        <h1 class="h1">El pastel que imaginas, <em>hecho para ti</em></h1>
+        <p class="lead">Cada pastel personalizado empieza con una plática: la ocasión, los colores, los sabores que te gustan. Nosotros lo convertimos en un diseño a tu medida.</p>
+        <div class="hero__actions"><a class="btn btn--primary" href="#cotizar">Cotiza tu pastel</a></div>
+      </div>
+      <div class="page-hero__media"><img src="assets/img/personaliza-portada.jpg" alt="Pastel blanco de tres pisos con flores" fetchpriority="high"></div>
+    </section>
+
+    <section class="section">
+      <div class="container stack-lg">
+        <h2 class="h2">Arma tu pastel</h2>
+        <div class="columns">
+          <div class="stack-md"><h3 class="h3">Sabores</h3><ul class="list"><li>Vainilla</li><li>Chocolate</li><li>Zanahoria</li><li>Red velvet</li><li>Limón</li></ul></div>
+          <div class="stack-md"><h3 class="h3">Rellenos</h3><ul class="list"><li>Betún de queso crema</li><li>Ganache de chocolate</li><li>Mermelada de frutos rojos</li><li>Crema de limón</li></ul></div>
+          <div class="stack-md"><h3 class="h3">Tamaños</h3><ul class="list"><li>Mediano: 6 a 8 personas</li><li>Grande: 10 a 12 personas</li></ul><p class="caption muted">Pedidos con mínimo 3 días de anticipación.</p></div>
+        </div>
+        <div class="gallery">
+          <img src="assets/img/pastel-decorado.jpg" alt="Pastel decorado con flores de betún" loading="lazy">
+          <img src="assets/img/pastel-flores.jpg" alt="Pastel con flores naturales" loading="lazy">
+          <img src="assets/img/pastel-domo.jpg" alt="Pastel domo con flores secas" loading="lazy">
+          <img src="assets/img/cheesecake-caramelo.jpg" alt="Cheesecake de caramelo" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="cotizar">
+      <div class="container split">
+        <div class="split__text stack-md"><p class="eyebrow">Cotización</p><h2 class="h2">Cuéntanos tu idea</h2>
+          <ol class="steps">
+            <li><span class="steps__n">1</span><span>Cuéntanos tu idea o mándanos una foto de referencia.</span></li>
+            <li><span class="steps__n">2</span><span>Te enviamos tu cotización.</span></li>
+            <li><span class="steps__n">3</span><span>Aparta tu fecha con un anticipo, mínimo 3 días antes.</span></li>
+          </ol>
+        </div>
+        <form class="quote-form" data-wa-form data-wa-intro="Hola Miga &amp; Azúcar, quiero cotizar un pastel." novalidate>
+          <h3 class="h3">Pide tu cotización</h3>
+          <div class="form-row">
+            <div class="field"><label for="p-nombre">Nombre</label><input id="p-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre"></div>
+            <div class="field"><label for="p-tel">Teléfono</label><input id="p-tel" name="telefono" type="tel" autocomplete="tel" placeholder="222 000 0000"></div>
+          </div>
+          <div class="field">
+            <label for="p-correo">Correo electrónico*</label>
+            <input id="p-correo" name="correo" type="email" autocomplete="email" placeholder="tu@correo.com" required aria-describedby="p-correo-error">
+            <p class="field__error" id="p-correo-error" hidden>Escribe un correo válido.</p>
+          </div>
+          <div class="field"><label for="p-mensaje">¿Qué nos quieres decir?</label><textarea id="p-mensaje" name="mensaje" rows="4" placeholder="Ocasión, fecha, sabores y número de personas"></textarea></div>
+          <div class="quote-form__actions">
+            <button class="btn btn--primary" type="submit">Enviar por WhatsApp</button>
+            <p class="caption">Te mostraremos el mensaje listo para enviar.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

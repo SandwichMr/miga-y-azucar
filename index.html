@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miga & Azúcar · Repostería de autor</title>
+  <meta name="description" content="Proyecto concepto: sitio web para una repostería de autor (marca ficticia).">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2e5b5a">
+  <link rel="preload" href="assets/fonts/Fraunces-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/InstrumentSans-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="inicio">
+  <div data-site-header></div>
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">Repostería de autor</p>
+        <h1 class="hero__title">Hecho en casa, <em>con cariño</em></h1>
+        <p class="hero__sub">Cheesecakes, panqués y pasteles especiales hechos a mano, en lotes pequeños. Pide en línea o cotiza tu pastel personalizado.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="productos.html">Ordena en línea</a>
+          <a class="btn btn--secondary" href="personaliza.html">Cotiza tu pastel</a>
+        </div>
+      </div>
+      <div class="hero__media"><img src="assets/img/hero-mesa.jpg" alt="Mesa con cheesecake de pistache, panqués glaseados y galletas" fetchpriority="high"></div>
+    </section>
+
+    <nav class="chips" aria-label="Categorías">
+      <div class="chips__row">
+        <a class="chip is-active" href="productos.html">Todos</a>
+        <a class="chip" href="productos.html?categoria=cheesecakes">Cheesecakes y tartas</a>
+        <a class="chip" href="productos.html?categoria=galletas">Galletas y brownies</a>
+        <a class="chip" href="productos.html?categoria=panques">Panqués</a>
+        <a class="chip" href="productos.html?categoria=pasteles">Pasteles</a>
+        <a class="chip" href="productos.html?categoria=temporada">Temporada</a>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container stack-lg">
+        <div class="section-head">
+          <div class="stack-sm"><p class="eyebrow">Recién horneado</p><h2 class="h2">Ordena en línea</h2></div>
+          <a class="link" href="productos.html">Ver todo</a>
+        </div>
+        <ul class="product-grid" data-home-grid></ul>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="personaliza">
+      <div class="container split">
+        <div class="split__text stack-md">
+          <p class="eyebrow">Personaliza</p>
+          <h2 class="h2">El pastel que imaginas, <em>hecho para ti</em></h2>
+          <p class="lead">Diseñamos pasteles para cada celebración: desde algo sencillo y elegante hasta creaciones llenas de color.</p>
+          <ol class="steps">
+            <li><span class="steps__n">1</span><span>Cuéntanos tu idea o mándanos una foto de referencia.</span></li>
+            <li><span class="steps__n">2</span><span>Te enviamos tu cotización.</span></li>
+            <li><span class="steps__n">3</span><span>Aparta tu fecha con un anticipo, mínimo 3 días antes.</span></li>
+          </ol>
+          <a class="link" href="personaliza.html">Ver sabores, rellenos y tamaños</a>
+        </div>
+        <form class="quote-form" data-wa-form data-wa-intro="Hola Miga &amp; Azúcar, quiero cotizar un pastel." novalidate>
+          <h3 class="h3">Pide tu cotización</h3>
+          <div class="form-row">
+            <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre"></div>
+            <div class="field"><label for="f-tel">Teléfono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" placeholder="222 000 0000"></div>
+          </div>
+          <div class="field">
+            <label for="f-correo">Correo electrónico*</label>
+            <input id="f-correo" name="correo" type="email" autocomplete="email" placeholder="tu@correo.com" required aria-describedby="f-correo-error">
+            <p class="field__error" id="f-correo-error" hidden>Escribe un correo válido.</p>
+          </div>
+          <div class="field"><label for="f-mensaje">¿Qué nos quieres decir?</label><textarea id="f-mensaje" name="mensaje" rows="4" placeholder="Ocasión, fecha, sabores y número de personas"></textarea></div>
+          <div class="quote-form__actions">
+            <button class="btn btn--primary" type="submit">Enviar por WhatsApp</button>
+            <p class="caption">Te mostraremos el mensaje listo para enviar.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container duo">
+        <article class="event">
+          <img src="assets/img/eventos-portada.jpg" alt="Mesa de postres para una boda en un jardín" loading="lazy">
+          <div class="event__box stack-sm">
+            <h2 class="h3 on-brand">Mesas de postres para eventos</h2>
+            <p>Bodas, cumpleaños, bautizos, reuniones y coffee break. También box lunch.</p>
+            <a class="link link--on-brand" href="eventos.html">Conoce Eventos</a>
+          </div>
+        </article>
+        <article class="workshop">
+          <div class="stack-md">
+            <p class="eyebrow">Talleres</p>
+            <h2 class="h2">Talleres privados</h2>
+            <p class="lead">Arma un taller con tus amigas, tu familia o tu equipo de trabajo y aprendan a decorar sus propios postres.</p>
+          </div>
+          <div><a class="btn btn--secondary" href="talleres.html">Conoce los talleres</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--mist">
+      <div class="container split split--center">
+        <img class="about__img" src="assets/img/nosotros.jpg" alt="Repostera espolvoreando azúcar glas sobre un pastel" loading="lazy">
+        <div class="split__text stack-lg">
+          <p class="eyebrow">Sobre nosotros</p>
+          <blockquote class="quote">«Lo hecho a mano se nota en cada bocado.»</blockquote>
+          <p class="lead">Empezamos horneando en casa para la familia y los amigos. Hoy seguimos igual: recetas propias, ingredientes de calidad y lotes pequeños.</p>
+          <a class="link" href="nosotros.html">Conoce nuestra historia</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>
