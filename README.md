@@ -1,6 +1,8 @@
 # Miga & Azúcar
 
-Sitio web completo para una repostería de autor, con design system propio. **Proyecto concepto: la marca es ficticia.** El nombre, los textos y los datos de contacto son de ejemplo, y las fotos de producto se generaron con IA.
+Sitio web completo para una repostería de autor, con design system propio.
+
+**[Ver la demo en vivo](https://leonardoflores.dev/proyectos/miga-y-azucar/)** · [Caso de estudio](https://leonardoflores.dev/trabajo/miga-y-azucar) **Proyecto concepto: la marca es ficticia.** El nombre, los textos y los datos de contacto son de ejemplo, y las fotos de producto se generaron con IA.
 
 <p align="center">
   <img src="docs/escritorio.png" alt="Página de inicio en computadora" width="72%">
@@ -46,6 +48,6 @@ Para agregar un producto, edita `js/data.js`. El encabezado, el pie y el carrito
 
 ## Créditos
 
-- Diseño y desarrollo: [Leonardo Flores](https://github.com/SandwichMr).
+- Diseño y desarrollo: [Leonardo Flores](https://leonardoflores.dev).
 - Tipografías: [Fraunces](https://github.com/undercasetype/Fraunces) e [Instrument Sans](https://github.com/Instrument/instrument-sans), bajo la SIL Open Font License (ver `assets/fonts/`).
 - Fotografías: generadas con IA para este proyecto.
